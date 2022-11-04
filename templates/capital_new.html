@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="my-2">
+  <h2 class="display-6">Add a New Capital to the List</h2>
+  <form action="" method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Save" class="btn btn-outline-primary">
+  </form>
+</div>
+{% endblock content %}
